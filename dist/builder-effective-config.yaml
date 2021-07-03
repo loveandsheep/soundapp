@@ -1,0 +1,14 @@
+directories:
+  output: dist
+  buildResources: assets
+files:
+  - filter:
+      - build/**/*
+      - build/**/*
+      - public/**/*
+extraMetadata:
+  main: build/electron.js
+appId: com.sheep
+productName: windSound
+extends: react-cra
+electronVersion: 13.1.4
