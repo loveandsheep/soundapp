@@ -10,6 +10,7 @@ const Encoding = require('encoding-japanese');
 
 function createWindow () {
 
+  /*
   exec('&"C:/Program Files/SuperCollider-3.11.2/scsynth.exe" -u 57110', (error, stdout, strerr) => {
     if (error) {
       console.error(`[ERROR] ${error}`);
@@ -29,6 +30,7 @@ function createWindow () {
     console.error(`${toString(strerr)}`);
 
   });
+  */
 
   // Create the browser window.
   const mainWindow = new BrowserWindow({

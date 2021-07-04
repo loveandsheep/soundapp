@@ -67,9 +67,9 @@ function App() {
     <div className="App">
       <header className="App-header">
         
-        {/* <SCPanel synName="test" synNum={1000} args={inst_noise}/> */}
+        <SCPanel synName="test" synNum={1000} args={inst_noise}/>
         {/* <SCPanel synName="Synth" synNum={1002} args={inst_hosoo} /> */}
-        <SCPanel synName="singrain" synNum={1001} args={inst_foolin} />
+        {/* <SCPanel synName="singrain" synNum={1001} args={inst_foolin} /> */}
 
       </header>
     </div>
