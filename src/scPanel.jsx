@@ -52,15 +52,27 @@ export default class SCPanel extends Component {
         return(
             <Box width='90%' spacing={2}>
             <Paper style={centering} m={1}>
-                <Box style={centering} p={1}>
-                    <Typography>{this.state.synthName}</Typography>
-                    <Button variant="contained" color="primary" onClick={this.newSynth} style={stockName}>
-                        開始
-                    </Button>
-                    <Button variant="contained" color="primary" onClick={this.freeSynth} style={stockName}>
-                        停止
-                    </Button>
-                </Box>
+                    <Grid container spacing={1}>
+                        <Grid item xs={12} sm={2} style={centering}>
+                            <Box style={centering} p={1}>
+                                <Typography variant='h5'>{this.state.synthName}</Typography>                           
+                            </Box>
+                        </Grid>
+                        <Grid item xs={12} sm={5}>
+                            <Box style={centering} p={1}>
+                            <Button fullWidth={true} variant="contained" color="primary" onClick={this.newSynth} style={stockName}>
+                            開始
+                            </Button>
+                            </Box>
+                        </Grid>
+                        <Grid item xs={12} sm={5}>
+                            <Box style={centering} p={1}>
+                            <Button fullWidth={true} variant="contained" color="primary" onClick={this.freeSynth} style={stockName}>
+                            停止
+                            </Button>
+                            </Box>
+                        </Grid>
+                    </Grid>
 
             </Paper>
 
