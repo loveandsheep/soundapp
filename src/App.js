@@ -34,6 +34,19 @@ function App() {
       label: "ゆらぎ強さ", argName: "mix_waving",
       min: 0.0, max: 1.0, step: 0.01, default: 1.0,
     },
+    {
+      label: "鋸波ミックス", argName: "mix_saw",
+      min: 0.0, max: 1.0, step: 0.01, default: 0.5,
+    },
+    {
+      label: "LPF freq", argName: "lpf_freq",
+      min: 10.0, max: 10000.0, step: 0.01, default: 440.0,      
+    },
+    {
+      label: "LPF dry/wet", argName: "lpf_mix",
+      min: 0.0, max: 1.0, step: 0.005, default: 0.0,
+    },
+
   ]
 
   const inst_hosoo = [
@@ -67,7 +80,7 @@ function App() {
     <div className="App">
       <header className="App-header">
         
-        <SCPanel synName="test" synNum={1000} args={inst_noise}/>
+        <SCPanel synName="undulation" synNum={1000} args={inst_noise}/>
         {/* <SCPanel synName="Synth" synNum={1002} args={inst_hosoo} /> */}
         {/* <SCPanel synName="singrain" synNum={1001} args={inst_foolin} /> */}
 
